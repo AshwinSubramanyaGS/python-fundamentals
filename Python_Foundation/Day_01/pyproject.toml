@@ -1,0 +1,17 @@
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+extend-exclude = [
+".venv",
+"build",
+"dist",
+]
+[tool.ruff.lint]
+select = [
+"E",
+"F",
+"W",
+"I",
+"B",
+"UP",
+]

@@ -1,0 +1,15 @@
+
+# Employee Training Management System
+# Python 3.10+
+
+# No external dependencies required.
+# Uses Python standard library modules:
+# csv
+# json
+# sqlite3
+# pathlib
+# contextlib
+# math
+# datetime
+# logging
+# unittest

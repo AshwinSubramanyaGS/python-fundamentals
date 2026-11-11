@@ -1,0 +1,50 @@
+[
+    {
+        "employee_id": 101,
+        "name": "Rahul",
+        "department": "IT",
+        "attendance": 90.0,
+        "score": 95.0,
+        "created_at": "2026-11-11 09:32:02"
+    },
+    {
+        "employee_id": 102,
+        "name": "Priya",
+        "department": "HR",
+        "attendance": 95.0,
+        "score": 92.0,
+        "created_at": "2026-11-11 09:32:02"
+    },
+    {
+        "employee_id": 103,
+        "name": "Kiran",
+        "department": "IT",
+        "attendance": 70.0,
+        "score": 65.0,
+        "created_at": "2026-11-11 09:32:02"
+    },
+    {
+        "employee_id": 104,
+        "name": "Ananya",
+        "department": "Finance",
+        "attendance": 88.0,
+        "score": 78.0,
+        "created_at": "2026-11-11 09:32:02"
+    },
+    {
+        "employee_id": 105,
+        "name": "Arjun",
+        "department": "IT",
+        "attendance": 60.0,
+        "score": 45.0,
+        "created_at": "2026-11-11 09:32:02"
+    },
+    {
+        "employee_id": 106,
+        "name": "Meera",
+        "department": "HR",
+        "attendance": 82.0,
+        "score": 88.0,
+        "created_at": "2026-11-11 09:32:02"
+    }
+]

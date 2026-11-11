@@ -1,0 +1,522 @@
+"""
+IMS Network - AI Launchpad
+Day 2 Trainer Material: Python Collections (Demo Snippets)
+Compiled Pythonic Plaintext Demo Code
+"""
+
+
+
+# ======================================================================# Demo Snippet 1
+employee_1 = "Rahul"
+employee_2 = "Priya"
+employee_3 = "Kiran"
+employee_4 = "Sneha"
+
+# Demo Snippet 2
+employee_names = [
+    "Rahul",
+    "Priya",
+    "Kiran",
+    "Sneha"
+]
+print(employee_names)
+
+# Demo Snippet 3
+employee_details = [
+    "Rahul",
+    105,
+    45000.50,
+    True
+]
+print(employee_details)
+
+# Demo Snippet 4
+employees = [
+    "Rahul",
+    "Priya",
+    "Kiran",
+    "Sneha"
+]
+print(employees[0])
+print(employees[1])
+print(employees[2])
+print(employees[-1])
+
+# Demo Snippet 5
+list_name[start:stop:step]
+
+# Demo Snippet 6
+employees = [
+    "Rahul",
+    "Priya",
+    "Kiran",
+    "Sneha",
+    "Arjun",
+    "Meera"
+]
+print(employees[0:3])
+print(employees[2:5])
+print(employees[:3])
+print(employees[3:])
+print(employees[::2])
+print(employees[::-1])
+
+# Demo Snippet 7
+employees = ["Rahul", "Priya", "Kiran"]
+employees[1] = "Sneha"
+print(employees)
+
+# Demo Snippet 8
+names.append("Arjun")
+
+# Demo Snippet 9
+names.extend(["Meera", "John"])
+
+# Demo Snippet 10
+names.insert(1, "Kiran")
+
+# Demo Snippet 11
+names.remove("Rahul")
+
+# Demo Snippet 12
+names.pop()
+
+# Demo Snippet 13
+names.clear()
+
+# Demo Snippet 14
+names.index("Priya")
+
+# Demo Snippet 15
+names.count("Rahul")
+
+# Demo Snippet 16
+names.sort()
+
+# Demo Snippet 17
+names.reverse()
+
+# Demo Snippet 18
+names.copy()
+
+# Demo Snippet 19
+employee_names = ["Rahul", "Priya"]
+employee_names.append(["Kiran", "Sneha"])
+print(employee_names)
+
+# Demo Snippet 20
+employee_names = ["Rahul", "Priya"]
+employee_names.extend(["Kiran", "Sneha"])
+print(employee_names)
+
+# Demo Snippet 21
+scores = [85, 45, 95, 70, 60]
+scores.sort()
+print(scores)
+
+# Demo Snippet 22
+scores = [85, 45, 95, 70, 60]
+sorted_scores = sorted(scores, reverse=True)
+print(sorted_scores)
+print(scores)
+
+# Demo Snippet 23
+employees = ["Rahul", "Priya", "Kiran"]
+for employee in employees:
+    print(employee)
+
+# Demo Snippet 24
+for index in range(len(employees)):
+    print(index, employees[index])
+
+# Demo Snippet 25
+for index, employee in enumerate(employees, start=1):
+    print(f"{index}. {employee}")
+
+# Demo Snippet 26
+employees = employees.append("Arjun")
+
+# Demo Snippet 27
+employees.append("Arjun")
+
+# Demo Snippet 28
+numbers = [1, 2, 3, 4, 5, 6]
+for number in numbers:
+    if number % 2 == 0:
+        numbers.remove(number)
+
+# Demo Snippet 29
+numbers = [1, 2, 3, 4, 5, 6]
+odd_numbers = [number for number in numbers if number % 2 != 0]
+print(odd_numbers)
+
+# Demo Snippet 30
+original = [["Rahul", 85], ["Priya", 90]]
+copied = original.copy()
+copied[0][1] = 95
+print(original)
+
+# Demo Snippet 31
+import copy
+
+original = [
+    ["Rahul", 85],
+    ["Priya", 90]
+]
+copied = copy.deepcopy(original)
+copied[0][1] = 95
+print(original)
+print(copied)
+
+# Demo Snippet 32
+training_config = ("AI-LAUNCHPAD-001", 75, 60, 100)
+print(training_config)
+
+# Demo Snippet 33
+training_config = ("AI-LAUNCHPAD-001", 75, 60, 100)
+print(training_config[0])
+print(training_config[1])
+print(training_config[-1])
+
+# Demo Snippet 34
+print(training_config[0:2])
+
+# Demo Snippet 35
+programme_id, minimum_attendance, passing_score, maximum_score = training_config
+print(programme_id)
+print(minimum_attendance)
+print(passing_score)
+print(maximum_score)
+
+# Demo Snippet 36
+scores = (80, 90, 75, 85, 95)
+first, *middle, last = scores
+print(first)
+print(middle)
+print(last)
+
+# Demo Snippet 37
+scores = (85, 90, 75, 90, 80)
+print(scores.count(90))
+print(scores.index(75))
+
+# Demo Snippet 38
+scores = (80, 90, 75)
+scores[0] = 95
+
+# Demo Snippet 39
+employee_data = (
+    "Rahul",
+    [80, 85, 90]
+)
+employee_data[1].append(95)
+print(employee_data)
+
+# Demo Snippet 40
+employee_departments = {
+    "IT",
+    "HR",
+    "Finance",
+    "IT",
+    "Operations",
+    "HR"
+}
+print(employee_departments)
+
+# Demo Snippet 41
+employee_ids = {101, 102, 103, 104}
+empty_set = set()
+print(type(employee_ids))
+print(type(empty_set))
+print(type({}))
+
+# Demo Snippet 42
+python_group = {101, 102, 103, 104, 105}
+devops_group = {104, 105, 106, 107, 108}
+
+# Demo Snippet 43
+all_participants = python_group | devops_group
+print(all_participants)
+
+# Demo Snippet 44
+common_participants = python_group & devops_group
+print(common_participants)
+
+# Demo Snippet 45
+python_only = python_group - devops_group
+print(python_only)
+
+# Demo Snippet 46
+exclusive_participants = python_group ^ devops_group
+print(exclusive_participants)
+
+# Demo Snippet 47
+skills = {"Python", "SQL", "Docker"}
+skills.add("Kubernetes")
+skills.update(["AWS", "Git", "Linux"])
+skills.discard("Java")
+print(skills)
+
+# Demo Snippet 48
+skills = {"Python", "SQL"}
+skills.discard("Java")  # Does not raise an error.
+# skills.remove("Java")  # Raises KeyError.
+
+# Demo Snippet 49
+active_employee_ids = {101, 102, 103, 104}
+employee_id = 103
+if employee_id in active_employee_ids:
+    print("Employee is active")
+else:
+    print("Employee not found")
+
+# Demo Snippet 50
+numbers = [2, 3, 2, 4, 3, 5]
+squares = {
+    number ** 2
+    for number in numbers
+}
+print(squares)
+
+# Demo Snippet 51
+email_addresses = [
+    "Rahul@Example.com",
+    "priya@example.com",
+    "RAHUL@example.com"
+]
+normalized_emails = {
+    email.strip().casefold()
+    for email in email_addresses
+}
+print(normalized_emails)
+
+# Demo Snippet 52
+employee = {
+    "employee_id": 101,
+    "name": "Rahul",
+    "department": "IT",
+    "attendance": 90,
+    "assessment_score": 85,
+    "is_active": True
+}
+print(employee)
+
+# Demo Snippet 53
+employee = {
+    "employee_id": 101,
+    "name": "Rahul",
+    "department": "IT",
+    "score": 85
+}
+print(employee["name"])
+print(employee["score"])
+
+# Demo Snippet 54
+print(employee.get("manager", "Not assigned"))
+
+# Demo Snippet 55
+employee = {
+    "employee_id": 101,
+    "name": "Rahul",
+    "department": "IT"
+}
+employee["assessment_score"] = 85
+employee["department"] = "Engineering"
+print(employee)
+
+# Demo Snippet 56
+employee.update({
+    "attendance": 92,
+    "is_active": True,
+    "location": "Bengaluru"
+})
+
+# Demo Snippet 57
+employee.pop("location")
+del employee["attendance"]
+print(employee)
+
+# Demo Snippet 58
+employee = {
+    "employee_id": 101,
+    "name": "Rahul",
+    "department": "IT"
+}
+for key in employee:
+    print(key)
+
+# Demo Snippet 59
+for value in employee.values():
+    print(value)
+
+# Demo Snippet 60
+for key, value in employee.items():
+    print(f"{key}: {value}")
+
+# Demo Snippet 61
+employee_ids = [101, 102, 103]
+scores = [85, 90, 78]
+score_mapping = {
+    employee_id: score
+    for employee_id, score in zip(employee_ids, scores)
+}
+print(score_mapping)
+
+# Demo Snippet 62
+employee = {
+    "name": "Rahul",
+    "score": 80,
+    "score": 95
+}
+print(employee)
+
+# Demo Snippet 63
+employee = {
+    "name": "Rahul",
+    "score": 85
+}
+employee_keys = employee.keys()
+print(list(employee_keys))
+employee["department"] = "IT"
+print(list(employee_keys))
+
+# Demo Snippet 64
+# manager = employee["manager"]
+
+# Demo Snippet 65
+manager = employee.get("manager", "Unassigned")
+
+# Demo Snippet 66
+employee_by_id = {
+    101: {"name": "Rahul"},
+    102: {"name": "Priya"}
+}
+new_employee_id = 103
+if new_employee_id in employee_by_id:
+    print("Duplicate employee ID")
+else:
+    employee_by_id[new_employee_id] = {"name": "Kiran"}
+
+# Demo Snippet 67
+records = {
+    "employee_id": 101,
+    105: "Employee",
+    (101, "IT"): "Rahul"
+}
+
+# Demo Snippet 68
+# Invalid: list is mutable and unhashable.
+# employee = {[101, "IT"]: "Rahul"}
+
+# Demo Snippet 69
+scores = [40, 55, 60, 75, 90]
+passed_scores = []
+for score in scores:
+    if score >= 60:
+        passed_scores.append(score)
+print(passed_scores)
+
+# Demo Snippet 70
+scores = [40, 55, 60, 75, 90]
+passed_scores = [score for score in scores if score >= 60]
+print(passed_scores)
+
+# Demo Snippet 71
+new_list = [expression for item in iterable if condition]
+
+# Demo Snippet 72
+scores = [60, 70, 80, 90]
+adjusted_scores = [score + 5 for score in scores]
+print(adjusted_scores)
+
+# Demo Snippet 73
+employee_scores = [45, 85, 90, 30, 75]
+eligible_scores = [score for score in employee_scores if score >= 60]
+
+# Demo Snippet 74
+scores = [45, 85, 90, 30]
+results = ["Pass" if score >= 60 else "Fail" for score in scores]
+print(results)
+
+# Demo Snippet 75
+employee_names = {
+    101: "Rahul",
+    102: "Priya",
+    103: "Kiran"
+}
+name_lengths = {
+    employee_id: len(name)
+    for employee_id, name in employee_names.items()
+}
+print(name_lengths)
+
+# Demo Snippet 76
+department_names = ["IT", "HR", "IT", "Finance", "HR"]
+unique_departments = {
+    department
+    for department in department_names
+}
+print(unique_departments)
+
+# Demo Snippet 77
+score_batches = [[80, 85], [90, 75], [60, 95]]
+all_scores = [
+    score
+    for batch in score_batches
+    for score in batch
+]
+print(all_scores)
+
+# Demo Snippet 78
+high_scores = [
+    score
+    for batch in score_batches
+    for score in batch
+    if score >= 85
+]
+print(high_scores)
+
+# Demo Snippet 79
+employees = ["Rahul", "Priya", "Kiran"]
+for index, employee in enumerate(employees, start=1):
+    print(index, employee)
+
+# Demo Snippet 80
+employee_ids = [101, 102, 103]
+employee_names = ["Rahul", "Priya", "Kiran"]
+for employee_id, name in zip(employee_ids, employee_names):
+    print(employee_id, name)
+
+# Demo Snippet 81
+employee_ids = [101, 102, 103]
+employee_names = ["Rahul", "Priya"]
+for employee_id, name in zip(employee_ids, employee_names, strict=True):
+    print(employee_id, name)
+
+# Demo Snippet 82
+scores = [75, 95, 80, 60]
+print(sorted(scores))
+print(sorted(scores, reverse=True))
+
+# Demo Snippet 83
+employees = [
+    ("Rahul", 85),
+    ("Priya", 95),
+    ("Kiran", 75)
+]
+ranked_employees = sorted(
+    employees,
+    key=lambda employee: employee[1],
+    reverse=True
+)
+print(ranked_employees)
+
+# Demo Snippet 84
+scores = [40, 50, 80, 55]
+has_passed = any(score >= 60 for score in scores)
+print(has_passed)
+
+# Demo Snippet 85
+scores = [75, 80, 85, 90]
+all_passed = all(score >= 60 for score in scores)
+print(all_passed)
